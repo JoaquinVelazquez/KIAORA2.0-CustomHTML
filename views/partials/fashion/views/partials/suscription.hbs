@@ -1,0 +1,52 @@
+<div class="template-suscription-main-container shops--secondary-font" id="ui-ms-automations__main-container">
+  <div class="template-suscription-container" id="ui-ms-automations__container">
+    <div>
+      <div class="template-suscription-container__title shops--primary-font" id="ui-ms-automations__container-title">{{subscriptionFooter.title}}</div>
+      <div class="template-suscription-container__description" id="ui-ms-automations__container-description">{{subscriptionFooter.description}}</div>
+    </div>
+    <div>
+      <div class="template-suscription-container-success" id="ui-ms-automations__container-success">
+        <div class="template-suscription-container-success__container">
+          <div class="template-suscription-container-success__text" id="ui-ms-automations__container-text">
+            {{subscriptionFooter.success}}
+          </div>
+          <div class="template-suscription-container-success__image" id="ui-ms-automations__container-image">
+            <span>{{> 'icons/social_networks/mail'}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="template-suscription-container-information" id="ui-ms-automations__container-information">
+        <div class="template-suscription-container__information" id="ui-ms-automations__information">
+          <input type="text" placeholder="{{subscriptionFooter.inputEmailLabel}}"
+            class="template-suscription-container__email"
+            id="ui-ms-automations__container-input">
+          <button class="template-suscription-container__button" id="ui-ms-automations__container-button">
+            <span class="template-suscription-container__text">{{subscriptionFooter.textButton}}</span>
+          </button>
+        </div>
+        <div class="template-suscription-container__error" id="ui-ms-automations__error">
+          <span class="template-suscription-container__error-icon">
+            {{> 'icons/utils/alert'}}
+          </span>
+          {{subscriptionFooter.error}}
+        </div>
+        <div class="template-suscription-container__error-bad-email" id="ui-ms-automations__error-email">
+          <span class="template-suscription-container__error-icon">
+            {{> 'icons/utils/alert'}}
+          </span>
+          {{subscriptionFooter.errorBadEmail}}
+        </div>
+        <div class="template-suscription-container__error-empty-email" id="ui-ms-automations__empty-email">
+          <span class="template-suscription-container__error-icon">
+            {{> 'icons/utils/alert'}}
+          </span>
+          {{subscriptionFooter.errorEmptyEmail}}
+        </div>
+        <div class="template-suscription-container__legal-text" id="ui-ms-automations__legal-text">{{subscriptionFooter.legal}}
+          <a href="{{subscriptionFooter.legalLink}}" target="_blank" id="ui-ms-automations__legal-text-link"
+            class="template-suscription-container__legal-text-link">{{subscriptionFooter.legalLinktext}}</a>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
