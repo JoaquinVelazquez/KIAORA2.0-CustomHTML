@@ -2157,6 +2157,18 @@ input[data-js="attributes-toggle"]:checked + .toggle-menu span:nth-child(2) {
 .contact-button {
     display: none!important;
 }
+/* Menu desktop */
+.toggle-menu span{
+  background-color: #5f5f5f !important;
+}
+.nav-fashion-menu .nav-fashion-list--vertical__item a{
+  color: #5f5f5f !important;
+  font-weight: 600 !important;
+}
+.nav-fashion-menu .nav-fashion-list--vertical__subitem a{
+  color: #5f5f5f !important;
+
+}
 
 /* FOOTER */
 
@@ -2249,12 +2261,12 @@ footer {
   background-color: rgb(212, 186, 173);
   border-radius: 20px;
   padding: 8px;
-  width: 230px;
-  height: 230px;
+  width: 150px;
+  height: 130px;
 }
 
 .tarjetas-1 .tarjeta img {
-  width: 140px;
+  width: 70px;
   filter: invert();
 }
 
@@ -2263,10 +2275,13 @@ footer {
   margin: 0;
   color: white;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
 }
 
+.nav-footer-about a{
+  color: #fff !important;
+}
 /* SECCION REDES */
 
 .seccion-redes {
