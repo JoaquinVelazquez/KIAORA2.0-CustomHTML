@@ -1,7 +1,7 @@
 <div class="tarjetas-1">
   <div class="tarjeta">
     <img src="https://cdn-icons-png.flaticon.com/512/7610/7610711.png" alt="envios.png">
-    <p>Envíos en el dia<br>en CABA y GBA</p>
+    <p>Envíos por<br>MERCADO ENVÍOS</p>
   </div>
   <div class="tarjeta">
     <img src="https://cdn-icons-png.flaticon.com/512/271/271035.png" alt="tarjetas.png">
@@ -42,6 +42,14 @@
 
   <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/cdbe3cdce8b25b438b85490a9e0ad45a.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
 </div>
+
+{{!-- <div class="seccion_titulo">
+    <div class="titulo">
+    <img src="https://iili.io/JfvpkSs.png" alt="iso-kiaora">
+    <a href="/nuestros-productos"><p>Ver todos los productos</p></a>
+    <img src="https://iili.io/JfvpkSs.png" alt="iso-kiaora">
+  </div>
+</div> --}}
 
 <div id="footer-container">
 {{#if subscriptionFooter.active}}
@@ -206,15 +214,14 @@
   <div class="footer_superior">
     <div class="categorias_footer">
       <div>
-        <a href="#">Cómo compra</a>
-        <a href="#">Cambios y/o devoluciones</a>
-        <a href="#">Métodos de envío</a>
-        <a href="#">Métodos de pago</a>
+        <a href="/devoluciones">Cambios y/o devoluciones</a>
+        <a href="/envios">Métodos de envío</a>
+        <a href="/pagos">Métodos de pago</a>
       </div>
-      <div>
-        <a href="#">Guías de talles</a>
-        <a href="#">Guía de cuidados</a>
-        <a href="#">Contacto</a>
+      <div class="text_aling_right">
+        <a href="/guia-talles">Guías de talles</a>
+        <a href="/guia-cuidados">Guía de cuidados</a>
+        <a href="/p/contacto">Contacto</a>
       </div>
     </div>
     <div class="logo_kiaora">
@@ -223,39 +230,15 @@
   </div>
   <hr class="divisor_footer">
   <div class="footer_inferior">
-            <small class="nav-footer-copyright">
-          <div class="nav-footer-disclaimer">
-            <div>
-              <div class="nav-footer-about">
-                <a href="{{{linkToMShopsLandingPage}}}" target="_blank" class="header--custom-text">{{i18n.powered_by}}</a>
-                {{#if linkToLegalNotices}}
-                  <a href="{{linkToLegalNotices.href}}" class="header--custom-text">{{linkToLegalNotices.label}}</a>
-                {{/if}}
-                {{#if linkToHowBuy}}
-                    <a href="{{linkToHowBuy.href}}" class="header--custom-text">{{linkToHowBuy.label}}</a>
-                {{/if}}
-                {{#if linkToLGPD}}
-                  <a href="{{linkToLGPD.href}}" class="header--custom-text">{{linkToLGPD.label}}</a>
-                {{/if}}
-              </div>
-              {{#if showBusinessData}}
-                {{#with fiscalData}}
-                  <div class="nav-footer-fiscal-data">
-                    <p class="nav-footer-fiscal-data__name">{{legal_name}}</p>
-                    <p class="nav-footer-fiscal-data__id">{{legal_doc}}</p>
-                  </div>
-                {{/with}}
-              {{/if}}
-            </div>
-            {{#if showQrData}}
-            {{#with fiscalData}}
-            <a href={{qr_link}} target="_F960AFIPInfo">
-              <img class="nav-footer-afip-img" src={{qr_img}} alt="Data fiscal" />
-            </a>
-            {{/with}}
-            {{/if}}
-          </div>
-        </small>
+    <div>
+      <a href="/p/avisos-legales">Avisos Legales</a>
+      <a href="/p/como-comprar">¿Cómo comprar?</a>
+      <a href="/p/privacidad">¿Cómo cuidamos tu privacidad?</a>
+    </div>
+    <div>
+      <a target="_blank" href="https://www.mercadoshops.com.ar/?utm_source=mercadoshops&utm_medium=referral&utm_campaign=hunting_always_on&utm_content=footer_seller">Powered by Mercado Shops</a>
+      <a target="_blank" href="https://galarreta.co/">Developed by Galarreta</a>
+    </div>
   </div>
 </footer>
 </div>
